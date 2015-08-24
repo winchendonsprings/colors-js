@@ -1,0 +1,37 @@
+.box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000000;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff; }
+
+.text {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: #000000; }
+
+.color-options {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 20px; }
+
+.make-red .box {
+  background-color: #dd0000; }
+
+.make-red .text {
+  color: #ff0000; }
+
+.make-green .box {
+  background-color: #00d000; }
+
+.make-green .text {
+  color: #00ff00; }
+
+.make-blue .box {
+  background-color: #0000dd; }
+
+.make-blue .text {
+  color: #0000ff; }
