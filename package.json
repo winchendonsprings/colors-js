@@ -1,18 +1,27 @@
 {
-  "name": "color",
+  "name": "colors-js",
   "version": "1.0.0",
-  "description": "color testing with js",
-  "main": "index.js",
+  "description": "change colors via css classes in js",
+  "main": "Gulpfile.js",
   "directories": {
     "doc": "doc"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winchendonsprings/colors-js.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/winchendonsprings/colors-js/issues"
+  },
+  "homepage": "https://github.com/winchendonsprings/colors-js#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.4"
+    "gulp-sass": "^2.0.4",
+    "node-bourbon": "^4.2.3"
   }
 }
