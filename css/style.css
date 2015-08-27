@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
 button, input[type="button"], input[type="reset"], input[type="submit"],
 button {
   -webkit-appearance: none;
@@ -203,15 +211,38 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+#area {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+#area::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.button-group {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.button-group::after {
+  clear: both;
+  content: "";
+  display: table; }
+
 .box {
-  width: 500px;
-  height: 500px;
-  border-width: 3px;
-  border-style: solid;
-  border-color: red green yellow blue;
-  margin: 20px;
-  padding: 20px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #333333;
+  margin-top: 20px;
   background-color: #ffffff; }
+
+.box:last-child {
+  margin-right: 0; }
 
 .text {
   font-size: 20px;
@@ -221,22 +252,29 @@ picture {
 
 .color-options {
   display: inline-block;
-  margin: 20px; }
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-top: 20px; }
+
+.color-options:last-child {
+  margin-right: 0; }
 
 .make-red .box {
-  background-color: #dd0000; }
+  background-color: #d00; }
 
 .make-red .text {
-  color: #ff0000; }
+  color: #f33; }
 
 .make-green .box {
-  background-color: #00d000; }
+  background-color: #0d0; }
 
 .make-green .text {
-  color: #00ff00; }
+  color: #3f3; }
 
 .make-blue .box {
-  background-color: #0000dd; }
+  background-color: #00d; }
 
 .make-blue .text {
-  color: #0000ff; }
+  color: #88f; }

@@ -1,59 +1,67 @@
 @import "bourbon";
+@import "neat";
 @import "base/base";
 
+#area {
+	@include outer-container;
+}
+
+.button-group {
+	@include outer-container;
+}
 
 .box {
-    width: 500px;
-    height: 500px;
-    // border: 1px solid #000000;
-    border-width: 3px;
-    border-style: solid;
-    @include border-color(red green yellow blue);
-    margin: 20px;
-    padding: 20px;
-    background-color: #ffffff;
+	@include span-columns(12);
+	//width: 300px;
+	height: 300px;
+	border: 1px solid #333333;
+	// border-width: 1px;
+	// border-style: solid;
+	// @include border-color(#000 #555 #999 #ddd);
+	// margin: 20px;
+	margin-top: 20px;
+	// padding: 20px;
+	background-color: #ffffff;
 }
 
 .text {
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    color: #000000;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	color: #000000;
 }
 
 .color-options {
-    // width: 20px;
-    // height: 20px;
-    display: inline-block;
-    // margin: 10px 10px 10px 0;
-    margin: 20px;
+	display: inline-block;
+	@include span-columns(4);
+	// margin: 10px 10px 10px 0;
+	// margin: 20px 20px 0 20px;
+	margin-top: 20px;
 }
 
 .make-red {
-    .box {
-        background-color: #dd0000;
-    }
-    .text {
-        color: #ff0000;
-    }
+	.box {
+		background-color: #d00;
+	}
+	.text {
+		color: #f33;
+	}
 }
 
 .make-green {
-    .box {
-        background-color: #00d000;
-    }
-    .text {
-        color: #00ff00;
-    }
+	.box {
+		background-color: #0d0;
+	}
+	.text {
+		color: #3f3;
+	}
 }
 
 .make-blue {
-    .box {
-        background-color: #0000dd;
-    }
-    .text {
-        color: #0000ff;
-    }
+	.box {
+		background-color: #00d;
+	}
+	.text {
+		color: #88f;
+	}
 }
-
-//test
