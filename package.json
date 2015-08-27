@@ -22,6 +22,7 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4",
-    "node-bourbon": "^4.2.3"
+    "node-bourbon": "^4.2.3",
+    "node-neat": "^1.7.2"
   }
 }
