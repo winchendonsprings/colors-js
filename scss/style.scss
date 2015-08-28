@@ -2,19 +2,36 @@
 @import "neat";
 @import "base/base";
 
+$mobile: new-breakpoint(max-width 480px 4);
+
 #area {
 	@include outer-container;
 }
 
 .button-group {
 	@include outer-container;
+	@include media($mobile) {
+		// @include span-columns(3);
+		@include pad(0 default);
+	}
 }
 
 .box {
 	@include span-columns(12);
 	//width: 300px;
 	height: 300px;
+	@include pad(10px);
+
 	border: 1px solid #333333;
+	@include border-top-radius(5px);
+	@include border-bottom-radius(5px);
+
+	@include media($mobile) {
+		border-right: 0;
+		border-left: 0;
+		border-top: 5px solid #333;
+		border-bottom: 5px solid #333;
+	}
 	// border-width: 1px;
 	// border-style: solid;
 	// @include border-color(#000 #555 #999 #ddd);
