@@ -8,11 +8,11 @@ gulp.task('styles', function() {
         .pipe(sass({
             includePaths: require('node-bourbon').includePaths,
             includePaths: require('node-neat').includePaths
-        }))
+        }).on('error', sass.logError))
 //	.pipe(sass({
 //            includePaths: require('node-neat').includePaths
 //        }))
-        .pipe(sass().on('error', sass.logError))
+        // .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('css/'));
 });
 
